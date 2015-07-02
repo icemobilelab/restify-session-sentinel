@@ -1,7 +1,7 @@
 {
-  "name": "restify-session",
-  "version": "1.1.0",
-  "description": "Session manager for REST server without cookies",
+  "name": "restify-session-sentinel",
+  "version": "1.0.0",
+  "description": "Session manager for REST server without cookies using Redis Sentinel",
   "private": false,
   "preferGlobal": false,
   "main": "index.js",
@@ -9,7 +9,7 @@
     "test": "mocha --require should --reporter spec --recursive"
   },
   "dependencies": {
-    "redis": "0.10.x",
+    "redis-sentinel": "0.3.3",
     "restify": "2.7.x",
     "object_utils": "*",
     "secure-rnd": "*"
@@ -22,19 +22,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mgesmundo/restify-session.git"
+    "url": "https://github.com/cadwmaster/restify-session-sentinel.git"
   },
   "bugs": {
-    "url": "https://github.com/mgesmundo/restify-session/issues"
+    "url": "https://github.com/cadwmaster/restify-session-sentinel/issues"
   },
   "keywords": [
     "session",
     "rest",
     "restify",
-    "redis",
+    "redis-sentinel",
     "cookies"
   ],
-  "author": "Marcello Gesmundo",
+  "author": "Christian Andrade",
   "license": "MIT",
   "engines": {
     "node": ">=0.8"
